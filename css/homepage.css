@@ -41,14 +41,21 @@ img {
   border-radius: 50%;
 }
 
-@media screen and (min-width: 480px) {
-  ul li {
-    display: inline-block;
-    margin-right: 5%;
-  }
+ul li {
+  display: inline-block;
+  #display: inline;
+  margin-right: 5%;
+}
 
-  ul li:last-child {
+ul li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 479px) {
+  ul li {
+    display: block;
     margin-right: 0;
+    margin-bottom: .5em;
   }
 }
 
