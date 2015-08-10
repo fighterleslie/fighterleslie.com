@@ -1,0 +1,13 @@
+/* fonts */
+
+@font-face {
+  font-family: 'Bitstream Vera';
+  src: url(../fonts/VeraSerif/VeraSerif-webfont.eot); /* IE9 quirks mode */
+
+  /* eot? for IE6-8; woff for modern browsers; ttf for non-IE and mobile; svg for legacy iOS */
+  src: url(../fonts/VeraSerif/VeraSerif-webfont.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/VeraSerif/VeraSerif-webfont.woff) format('woff'),
+       url(../fonts/VeraSerif/VeraSerif-webfont.ttf) format('truetype'),
+       url(../fonts/VeraSerif/VeraSerif-webfont.svg#bitstream_vera_serifroman) format('svg');
+}
+

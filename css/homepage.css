@@ -1,0 +1,78 @@
+/*
+ * Author: Leslie Zhang;
+ * Copyright (c) fighterleslie.com All rights reserved.
+ */
+
+/* default border-box for all boxes */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* svg background with data uri */
+body {
+  background: #339BE6 url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgogICAgPHJlY3Qgd2lkdGg9IjU2IiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzMzOUJFNiI+PC9yZWN0PgogICAgPHBhdGggZD0iTTI4IDY2TDAgNTBMMCAxNkwyOCAwTDU2IDE2TDU2IDUwTDI4IDY2TDI4IDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM0Q4QUQ0IiBzdHJva2Utd2lkdGg9IjEiPjwvcGF0aD4KICAgIDxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJFOTJEQSIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+CiAgPC9zdmc+);
+  color: #000611;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+#wrapper {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 8em 1em 2em 1em;
+  text-align: center;
+}
+
+#avatar {
+  margin-top: -75px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 480px) {
+  ul li {
+    display: inline-block;
+    margin-right: 5%;
+  }
+
+  ul li:last-child {
+    margin-right: 0;
+  }
+}
+
+h1, h2, p {
+  font: 400 2em "Bitstream Vera", Georgia, serif;
+}
+
+h2 {
+  margin-bottom: .8em;
+}
+
+p {
+  margin: 0 auto 1em auto;
+}
+
+li a {
+  color: #fff;
+  font: 2em "Lucida Grande", Helvetica, Arial, STXihei, "华文细黑", "Microsoft Yahei", "微软雅黑", sans-serif;
+  text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+li a:hover {
+  border-bottom: 3px solid #DF6209;
+}
+
