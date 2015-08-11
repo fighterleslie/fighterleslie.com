@@ -77,9 +77,10 @@ li a {
   text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
   line-height: 1.5;
   text-decoration: none;
+  padding-bottom: .15em;
 }
 
 li a:hover {
-  border-bottom: 3px solid #DF6209;
+  border-bottom: 5px solid #DF6209;
 }
 
