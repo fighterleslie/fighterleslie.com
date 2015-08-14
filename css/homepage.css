@@ -37,7 +37,9 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 img {
@@ -94,7 +96,8 @@ li a {
   font: 2em "Lucida Grande", Helvetica, Arial, STXihei, "华文细黑", "Microsoft Yahei", "微软雅黑", sans-serif;
   text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
   text-decoration: none;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
 }
 
 li a:hover {
