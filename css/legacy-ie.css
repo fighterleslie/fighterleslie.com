@@ -1,0 +1,33 @@
+body {
+  color: #fff;
+  background: #339BE6;
+  font: 100% "Lucida Grande", Helvetica, Arial, STXihei, "华文细黑", "Microsoft Yahei", "微软雅黑", sans-serif;
+}
+
+#wrapper {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 5em;
+  text-align: center;
+}
+
+h1 {
+  line-height: 1.5;
+}
+
+a {
+  font-size: 1.5em;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+}
+
+a:link,
+a:visited {
+  color: #fff;
+}
+
+a:focus,
+a:hover,
+a:active {
+  border-bottom: none;
+}
