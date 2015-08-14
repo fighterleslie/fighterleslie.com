@@ -66,10 +66,14 @@ ul li:last-child {
   }
 }
 
-/* on small screens with landscape orientation, don't show the avatar so users don't need to scroll */
+/* on small screens with landscape orientation, don't show the avatar so that users don't need to scroll */
 @media screen and (orientation: landscape) and (max-height: 360px) {
   img {
     display: none;
+  }
+
+  h1 {
+    margin-top: 0;
   }
 }
 
