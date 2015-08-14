@@ -66,6 +66,13 @@ ul li:last-child {
   }
 }
 
+/* on small screens with landscape orientation, don't show the avatar so users don't need to scroll */
+@media screen and (orientation: landscape) and (max-height: 360px) {
+  img {
+    display: none;
+  }
+}
+
 /* serif font stack */
 h1 {
   font: 700 2em Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
@@ -76,6 +83,8 @@ p {
   margin: 1em auto;
 }
 
+/* sans-serif font stack */
+/* transition */
 li a {
   color: #fff;
   font: 2em "Lucida Grande", Helvetica, Arial, STXihei, "华文细黑", "Microsoft Yahei", "微软雅黑", sans-serif;
