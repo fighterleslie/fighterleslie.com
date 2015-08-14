@@ -6,6 +6,7 @@
 /* default border-box for all boxes */
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -18,6 +19,8 @@ html {
 body {
   background: #339BE6 url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgogICAgPHJlY3Qgd2lkdGg9IjU2IiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzMzOUJFNiI+PC9yZWN0PgogICAgPHBhdGggZD0iTTI4IDY2TDAgNTBMMCAxNkwyOCAwTDU2IDE2TDU2IDUwTDI4IDY2TDI4IDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM0Q4QUQ0IiBzdHJva2Utd2lkdGg9IjEiPjwvcGF0aD4KICAgIDxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJFOTJEQSIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+CiAgPC9zdmc+);
   color: #000611;
+  min-height: 100%;
+  position: relative;
 }
 
 ul {
@@ -26,15 +29,15 @@ ul {
   padding-left: 0;
 }
 
+/* horizontal and vertical centering */
 #wrapper {
+  width: 100%;
   min-width: 320px;
-  margin: 0 auto;
-  padding: 8em 1em 2em 1em;
   text-align: center;
-}
-
-#avatar {
-  margin-top: -75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 img {
@@ -44,7 +47,7 @@ img {
 ul li {
   display: inline-block;
   #display: inline;
-  margin-right: 5%;
+  margin-right: 3%;
 }
 
 ul li:last-child {
@@ -52,35 +55,37 @@ ul li:last-child {
 }
 
 @media screen and (max-width: 479px) {
+  html {
+    font-size: 12px;
+  }
+
   ul li {
     display: block;
     margin-right: 0;
-    margin-bottom: .5em;
+    margin-bottom: .75em;
   }
 }
 
-h1, h2, p {
-  font: 400 2em "Bitstream Vera", Georgia, serif;
-}
-
-h2 {
-  margin-bottom: .8em;
+/* serif font stack */
+h1 {
+  font: 700 2em Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
 }
 
 p {
-  margin: 0 auto 1em auto;
+  font: 700 1.5em "Bitstream Vera", Georgia, serif;
+  margin: 1em auto;
 }
 
 li a {
   color: #fff;
   font: 2em "Lucida Grande", Helvetica, Arial, STXihei, "华文细黑", "Microsoft Yahei", "微软雅黑", sans-serif;
   text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-  line-height: 1.5;
   text-decoration: none;
-  padding-bottom: .15em;
+  transition: all 0.4s ease;
 }
 
 li a:hover {
-  border-bottom: 5px solid #DF6209;
+  text-shadow: 0 .05em .05em rgba(0, 0, 0, .5);
 }
+
 
