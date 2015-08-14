@@ -1,6 +1,8 @@
 /*
- * Author: Leslie Zhang;
- * Copyright (c) fighterleslie.com All rights reserved.
+ * Author: Leslie Zhang
+ * Open-sourced under MIT license
+ * vendor prefixes automatically added using postcss + autoprefixer
+ * IE9+ supported
  */
 
 /* default border-box for all boxes */
@@ -48,7 +50,6 @@ img {
 
 ul li {
   display: inline-block;
-  #display: inline;
   margin-right: 3%;
 }
 
@@ -103,5 +104,3 @@ li a {
 li a:hover {
   text-shadow: 0 .05em .05em rgba(0, 0, 0, .5);
 }
-
-
