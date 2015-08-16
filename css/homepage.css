@@ -7,8 +7,8 @@
 
 /* default border-box for all boxes */
 html {
+  font-size: 16px;
   box-sizing: border-box;
-  height: 100%;
 }
 
 *,
@@ -21,8 +21,15 @@ html {
 body {
   background: #339BE6 url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgogICAgPHJlY3Qgd2lkdGg9IjU2IiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzMzOUJFNiI+PC9yZWN0PgogICAgPHBhdGggZD0iTTI4IDY2TDAgNTBMMCAxNkwyOCAwTDU2IDE2TDU2IDUwTDI4IDY2TDI4IDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM0Q4QUQ0IiBzdHJva2Utd2lkdGg9IjEiPjwvcGF0aD4KICAgIDxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJFOTJEQSIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+CiAgPC9zdmc+);
   color: #000611;
-  min-height: 100%;
   position: relative;
+}
+
+/* solve the IE 11 unnecessary scroll bar */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 ul {
@@ -57,7 +64,7 @@ ul li:last-child {
   margin-right: 0;
 }
 
-@media screen and (max-width: 479px) {
+@media (max-width: 479px) {
   html {
     font-size: 12px;
   }
@@ -70,7 +77,7 @@ ul li:last-child {
 }
 
 /* on small screens with landscape orientation, don't show the avatar so that users don't need to scroll */
-@media screen and (orientation: landscape) and (max-height: 360px) {
+@media (orientation: landscape) and (max-height: 400px) {
   img {
     display: none;
   }
