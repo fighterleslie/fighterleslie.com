@@ -38,6 +38,10 @@ ul {
   padding-left: 0;
 }
 
+em {
+  font-style: italic;
+}
+
 /* horizontal and vertical centering */
 #wrapper {
   width: 100%;
